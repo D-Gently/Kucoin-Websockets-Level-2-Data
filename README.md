@@ -6,12 +6,12 @@ Provides real-time websockets-based Level 2 Order Book data from Kucoin on the l
 
 
 Websocket Books: Created on Tue Apr  5 11:25:58 2022
-
 @author: D. Gently
 
 
-
 CONTACT FOR ASSISTANCE: anon35828167@protonmail.com
+(Sample Python code is available on request to assist with use of the local Level 2 data feed.)
+
 
 
            ------------------------------------------------------------------------------------------------------------
