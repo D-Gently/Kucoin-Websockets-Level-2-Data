@@ -41,7 +41,6 @@ CONTACT FOR ASSISTANCE: anon35828167@protonmail.com
 
 
 
-
 Retrieve and maintain the Kucoin full depth order books associated with a set of five PeTRA instruments.  Using a multiplex tunnel approach -- that is, subscribing to all five
 data feeds under one connection.  Testing has revealed that a standalone program approach that maintains a set of local books for all PeTRA instances is best given the rate
 of messages coming down the multplex tunnel.
