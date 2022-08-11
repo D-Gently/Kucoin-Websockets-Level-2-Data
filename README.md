@@ -1,5 +1,15 @@
 # Kucoin-Websockets-Level-2-Data
 
+
+VERSION 1.3.x -- THIS VERSION REPLACES 1.2 WHICH HAS PERFORMANCE ISSUES WHEN THE TOTAL MESSAGE FEED EXCEEDS ABOUT 700 MESSAGES PER SECOND.  THIS NEW VERSION CAN RUN ON A STANDARD FREE ORACLE-HOSTED LINUX SERVER AND KEEP UP WITH FEEDS EXCEEDING 2,000 MPS.  THE FUNCTIONALITY IS SPLIT INTO TWO PROGRAMS WHICH SHOULD BE RUN ON THE SAME PLATFORM IN THE SAME FOLDER ON DIFFERENT TERMINALS (USING screen FOR EXAMPLE):
+
+           ws_books_streamer_v.1.3.py       This program subscribes to the Kucoin feed and pre-processes the incoming messages into stream files
+           ws_books_level2_v.1.3.1.py       This program reads the stream files and produces level 2 books at a rate of up to around 1 copy of each
+                                            of five books (both sides, bid and ask) per about 7 seconds.  The disk on the free Oracle server is apparently
+                                            in RAM as the rate of file creation is too high on regular storage.
+                                            
+
+
 Provides real-time websockets-based Level 2 Order Book data from Kucoin on the local system for high performance trading automation.
 
 "DonationWare": If you benefit from this software make a donation.
